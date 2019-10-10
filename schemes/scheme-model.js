@@ -47,8 +47,9 @@ function update(changes, id) {
 }
 
 function remove(id) {
-    db.select("*")
+   return db.select("*")
     .from("schemes")
     .where({ id })
-    remove()
+    // remove()
+   .delete()
 }
