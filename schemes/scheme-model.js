@@ -50,5 +50,5 @@ function remove(id) {
     db.select("*")
     .from("schemes")
     .where({ id })
-    remove(null)
+    remove()
 }
